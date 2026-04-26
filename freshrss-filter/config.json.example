@@ -1,0 +1,6 @@
+{
+  "freshrss_url": "https://your-freshrss-instance.com",
+  "username": "your-username",
+  "api_password": "your-api-password",
+  "note": "api_password 是 Google Reader API 密码。如果不工作，需要在 FreshRSS 设置→认证中单独设置"
+}

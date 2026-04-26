@@ -1,0 +1,43 @@
+"""周报模板配置文件
+
+使用方式:
+1. 复制此文件为 weekly_template.py
+2. 修改 FAMILY_MEMBERS 等变量为你的个人设置
+"""
+
+# 家庭成员列表
+# 格式: [("称呼", "描述备注"), ...]
+FAMILY_MEMBERS = [
+    ("配偶", ""),
+    ("孩子1", "（没有就删掉，孩子状态，做了什么）"),
+    ("孩子2", "（没有就删掉，孩子状态，做了什么）"),
+]
+
+# 周报文档路径模板
+# 使用 {year} 和 {week_num:02d} 作为占位符
+REPORT_PATH_TEMPLATE = "/生活记录/{year}/{year} 年第 {week_num:02d} 周"
+
+# 目标部分模板
+GOALS_TEMPLATE = '''
+{{{col
+{{{
+工作
+{: style="color: #ffffff;background-color: #07689f; padding-left: 10px;"}
+- [ ] 工作事项1
+}}}
+{{{
+成长 & 运动 ⭐
+{: style="color: #ffffff;background-color: #07689f; padding-left: 10px;"}
+- [ ] 量化：
+- [ ] 读书：书名-页码，0/50
+- [ ] 运动：爬楼梯
+}}}
+{{{
+其他
+{: style="color: #ffffff;background-color: #07689f; padding-left: 10px;"}
+- [ ] 社交
+- [ ] 聚焦：一件事、番茄钟、反黑洞
+}}}
+}}}
+{: memo="目标"}
+'''

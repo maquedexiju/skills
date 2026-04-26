@@ -1,0 +1,12 @@
+# Feed 来源黑名单
+# 支持正则表达式，匹配订阅源名称（不区分大小写）
+# 以 # 开头的行为注释
+
+# PT 站
+(?i)ttg
+(?i)totheglory
+(?i)tccf
+(?i)torrentccf
+(?i)m-team
+(?i)mt
+(?i)tp torrents
